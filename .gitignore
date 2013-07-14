@@ -1,3 +1,5 @@
-Makefile
-selection_sort
+git selection_sort
 gcc_selection_sort
+main
+core
+out

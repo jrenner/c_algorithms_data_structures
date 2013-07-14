@@ -48,7 +48,7 @@ int* merge_sort(int* array, int size) {
 	for (i = 0; i < b_len; i++) {
 		b[i] = array[j++];
 	}
-	//puts("------------------");
+	//randomputs("------------------");
 	a = merge_sort(a, a_len);
 	b = merge_sort(b, b_len);
 	return merge(a, a_len, b, b_len);
