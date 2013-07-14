@@ -1,4 +1,6 @@
 # Ignore everything in this directory
+# the Makefile in the parent directory
+# requires this directory to exist
 *
 # Except this file
 !.gitignore
