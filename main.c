@@ -96,7 +96,7 @@ void test_merge_sort(int *original, int size) {
 }
 
 int main() {
-	int size = 1000;
+	int size = 20000;
 	int *array = malloc(sizeof(int) * size);
 	populate_random_array(array, size);
 	test_selection_sort(array, size);
