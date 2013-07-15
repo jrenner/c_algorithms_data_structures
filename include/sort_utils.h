@@ -5,5 +5,6 @@ int verify_sorted(int* array, int size);
 void array_print(int* array, int size, char* name);
 void populate_random_array(int* array, int size);
 void swap(int* array, int i, int j);
+int *copy_array(int *array, int size);
 
 #endif

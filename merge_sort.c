@@ -3,6 +3,8 @@
 #include <assert.h>
 #include "sort_utils.h"
 
+long inversions = 0;
+
 int* merge(int* a, int a_len, int* b, int b_len) {	
 	int i = 0;
 	int j = 0;
@@ -23,6 +25,7 @@ int* merge(int* a, int a_len, int* b, int b_len) {
 			result[k++] = a[i++];
 		} else if (j < b_len) {
 			result[k++] = b[j++];
+			inversions += a_len - i;
 		}
 	}
 	return result;

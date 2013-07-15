@@ -6,7 +6,6 @@ int verify_sorted(int* array, int size) {
 	int i;
 	for (i = 0; i < size - 2; i++) {
 		if (array[i] > array[i+1]) {
-			printf("SORT NOT OK: array[%d]: %d, array[%d]: %d\n", i, array[i], i+1, array[i+1]);
 			sorted = 0;
 		}
 	}
@@ -25,6 +24,15 @@ void populate_random_array(int* array, int size) {
 		int r = rand() % 10000;
 		array[i] = r;
 	}
+}
+
+int *copy_array(int *array, int size) {
+	int i;
+	int *copy = malloc(sizeof(int) * size);
+	for (i = 0; i < size; i++) {
+		copy[i] = array[i];
+	}
+	return copy;
 }
 
 void array_print(int* array, int size, char* name) {
